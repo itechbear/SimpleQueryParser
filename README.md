@@ -1,5 +1,5 @@
 # SimpleQueryParser
-A simple query parser using flex and bison
+A simple C query parser using flex and bison
 
 Introduction
 ============
@@ -23,3 +23,8 @@ Usage
 =====
 
 ./parser "this AND that"
+
+Warning
+=======
+
+This parser is not thread-safe since it uses global variables while parsing.
